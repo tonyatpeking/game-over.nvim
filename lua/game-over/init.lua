@@ -1,10 +1,16 @@
--- -- game_over/init.lua
+local M = {}
 
--- -- Initialize the plugin
--- local M = {}
+function M.setup(opts)
+  print("game-over.nvim is setup!")
+   opts = opts or {}
 
--- function M.setup()
---   -- Add your plugin setup code here
--- end
+   vim.keymap.set("n", "h", function()
+      if opts.name then
+         print("hello, " .. opts.name)
+      else
+         print("hello")
+      end
+   end)
+end
 
--- return M
+return M
