@@ -1,10 +1,20 @@
+# Local testing data
+local-data/
+
+# Local shortcuts
+*.lnk
+
+
 # Compiled Lua sources
 luac.out
+*.luac
 
-# luarocks build files
+# LuaRocks
 *.src.rock
 *.zip
 *.tar.gz
+luarocks-config.lua
+lua_modules/
 
 # Object files
 *.o
@@ -39,3 +49,21 @@ luac.out
 *.x86_64
 *.hex
 
+# Neovim specific
+session.vim
+undo-dir/
+
+# Project specific
+.env 
+
+
+# Operating System specific
+.DS_Store
+Thumbs.db
+
+
+# Temporary files
+*.swp
+*.bak
+*.tmp
+*.temp
